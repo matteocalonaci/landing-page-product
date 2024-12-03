@@ -25,63 +25,117 @@
 
   <body>
     <header class="d-flex justify-content-between align-items-center">
-        <!-- Header sinistro (Logo) -->
-        <div class="col-3 d-flex justify-content-start">
-            <div class="img-container">
-                <img src="./img/logo.png" alt="Logo" style="width: 4rem; padding-bottom: 1rem;" />
-            </div>
+      <!-- Header sinistro (Logo) -->
+      <div class="col-3 d-flex justify-content-start">
+        <div class="img-container">
+          <img
+            src="./img/logo.png"
+            alt="Logo"
+            style="width: 4rem; padding-bottom: 1rem"
+          />
         </div>
-        
-        <!-- Header destro (Menu) -->
-        <div class="col-9 d-flex justify-content-end align-items-center">
-            <!--Hamburger menu per mobile -->
-            <div class="d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <i class="fa-solid fa-bars text-black"></i>
+      </div>
+
+      <!-- Header destro (Menu) -->
+      <div class="col-9 d-flex justify-content-end align-items-center">
+        <!--Hamburger menu per mobile -->
+        <div
+          class="d-block d-md-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars text-black"></i>
+        </div>
+
+        <!-- Offcanvas -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+          style="width: 70%"
+        >
+          <div class="offcanvas-header">
+            <div class="img-container mx-4">
+              <img
+                src="./img/logo.png"
+                alt="Logo"
+                style="width: 4rem; padding-bottom: 1rem"
+              />
             </div>
-    
-            <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 70%;">
-                <div class="offcanvas-header">
-                    <div class="img-container mx-4">
-                        <img src="./img/logo.png" alt="Logo" style="width: 4rem; padding-bottom: 1rem;" />
-                    </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <nav>
-                        <ul style="line-height: 4rem; margin: 0;">
-                            <!-- JavaScript -->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-    
-            <!-- Menu di navigazione per schermi più grandi -->
-             
-            <ul class=" ul-header d-none d-md-flex justify-content-between align-items-center">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav>
+              <ul style="line-height: 4rem; margin: 0">
                 <!-- JavaScript -->
-            </ul>
+              </ul>
+            </nav>
+          </div>
         </div>
+
+        <!-- Menu di navigazione per schermi più grandi -->
+
+        <ul
+          class="ul-header d-none d-md-flex justify-content-between align-items-center"
+        >
+          <!-- JavaScript -->
+        </ul>
+      </div>
     </header>
 
     <main>
-        <section class="d-flex flex-column flex-md-row">
-    <div class="col-12 col-md-6">
-        <img src="./img/banner-image.png" alt="" style="height: 100%; width: 100%; object-fit: cover;">
-    </div>
-    <div class="col-12 col-md-6 text-center p-4" style="background-image: url('./img/banner-bg.png'); background-size: cover; background-position: center;">
-        <h2 class="h2-banner-image"> 
-            Rubber Duck Debuggings
-        </h2>
-        <p class="p-banner-image">
-            Spiegare il codice ad un paperella di gomma aiuta i programmatori a chiarire il pensiero e individuare errori nascosti.
-        </p>
+      <section class="d-flex flex-column flex-md-row">
+        <div class="col-12 col-md-6">
+          <img
+            src="./img/banner-image.png"
+            alt=""
+            style="height: 100%; width: 100%; object-fit: cover"
+          />
+        </div>
+        <div
+          class="col-12 col-md-6 text-center p-4"
+          style="
+            background-image: url('./img/banner-bg.png');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <h2 class="h2-banner-image">Rubber Duck Debuggings</h2>
+          <p class="p-banner-image">
+            Spiegare il codice ad un paperella di gomma aiuta i programmatori a
+            chiarire il pensiero e individuare errori nascosti.
+          </p>
 
-        <button class="btn-banner-image">
-            ACQUISTALA SUBITO!
-        </button>
-    </div>
-</section>
+          <button class="btn-banner-image">ACQUISTALA SUBITO!</button>
+        </div>
+      </section>
+
+      <!-- i punti di vista -->
+      <section class="d-flex flex-column flex-md-row">
+        <!-- col-sx -->
+        <div class="col-12 col-sx col-md-4 text-center mb-3 mb-md-0">
+            <h3 class="h3-punti-di-vista"></h3>
+            <p class="text-punti-di-vista"></p>
+        </div>
+        
+        <!-- img-papera -->
+        <div class="col-12 col-cntr col-md-4 mb-3 mb-md-0">
+            <img src="./img/invisible.png" alt="Paperella di gomma" class="img-fluid" />
+        </div>
+        
+        <!-- col-dx -->
+        <div class="col-12 col-dx col-md-4 text-center mb-3 mb-md-0">
+            <h3 class="h3-punti-di-vista"></h3>
+            <p class="text-punti-di-vista"></p>
+        </div>
+    </section>
     </main>
 
     <!-- link javascript -->
@@ -93,4 +147,3 @@
     ></script>
   </body>
 </html>
-

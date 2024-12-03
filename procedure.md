@@ -18,3 +18,18 @@ La prima sezione è anch'essa divisa in 2 colonne.
 - colonna 2 -> testo di presentazione.
 
 nella vista mobile le colonne sono una sotto l'altra mentre nelle altre viste sono affiancate.
+
+**SECTION 2**
+La seconda sezione è divisa in 3 colonne
+
+- colonna 1 -> punti di vista 1.
+- colonna 2 -> immagine di una papera.
+- colonna 3 -> punti di vista 2.
+
+nella vista mobile le colonne sono una sotto l'altra mentre nelle altre viste sono affiancate.
+
+Inoltre, i punti di vista composti da titlo e testo non sono stati inseriti manualmente, ma vengono generati dinamicamente tramite la funzione printViewPoints() nel file JavaScript.
+
+
+
+

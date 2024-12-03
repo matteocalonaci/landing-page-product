@@ -18,8 +18,11 @@ header {
     padding: 1rem 2rem;
     font-size: 1rem; 
     line-height: 1rem; 
+    background-color: white;
     font-weight: 400;
     position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .ul-header{
@@ -57,6 +60,29 @@ li:hover{
     color: white;
 }
 
+/* seconda section */
+.col-sx{
+padding: 3rem 0.5rem ;
+
+}
+
+.col-cntr{
+    display: flex; /* Abilita Flexbox */
+    justify-content: start; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 1rem ;
+    img{
+    width: 90%;
+    }
+}
+
+.col-dx{
+padding-top: 3rem 0 ;
+
+}
+
+
+
 
 /* Media query per tablet e desktop */
 @media (min-width: 768px) {
@@ -85,6 +111,28 @@ li:hover{
     background-color: black;
     color: white;
 }
+
+/* seconda section */
+.col-sx{
+    padding: 3rem 1rem ;
+    
+    }
+
+    .col-cntr{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 1rem;
+        img{
+        width: 90%;
+        }
+    }
+    
+    .col-dx{
+    padding: 3rem 1rem;
+    
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -107,5 +155,39 @@ li:hover{
         background-color: black;
         color: white;
     }
-   
+
+    /* seconda section */
+.col-sx{
+    padding: 3rem  4rem;
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    }
+
+    .col-cntr{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 1rem;
+        img{
+        width: 80%;
+        }
+    }
+    
+    
+    .col-dx{
+        padding: 3rem  4rem;
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }        
+    }
+    
 }
