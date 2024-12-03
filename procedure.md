@@ -30,6 +30,13 @@ nella vista mobile le colonne sono una sotto l'altra mentre nelle altre viste so
 
 Inoltre, i punti di vista composti da titlo e testo non sono stati inseriti manualmente, ma vengono generati dinamicamente tramite la funzione printViewPoints() nel file JavaScript.
 
+**SECTION 3**
+Con l'aiuto dell'intelligenza artificiale  ho sviluppato questa sezione in modo da visualizzare diversamente le card a seconda del dispositivo:
 
+Mobile: Viene visualizzata una card alla volta, con la possibilità di navigare tra di esse utilizzando punti di navigazione.
+
+Tablet: Vengono visualizzate due card alla volta, con la possibilità di navigare tra di esse utilizzando punti di navigazione.
+
+Desktop: Vengono visualizzate tre card alla volta, con un numero appropriato di punti di navigazione che corrispondono ai gruppi di card visualizzati.
 
 

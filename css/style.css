@@ -1,193 +1,252 @@
-
 /* Reset di base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
-
-
 
 /* Intestazione */
 header {
-    padding: 1rem 2rem;
-    font-size: 1rem; 
-    line-height: 1rem; 
-    background-color: white;
-    font-weight: 400;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  background-color: white;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
-.ul-header{
-    width: 80%;
+.ul-header {
+  width: 80%;
 }
 
-
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-li:hover{
-    color: blue;
+li:hover {
+  color: blue;
 }
 
 /* prima section */
-.h2-banner-image{
-    font-size: 3.5rem;
-    margin: 0;
+.h2-banner-image {
+  font-size: 3.5rem;
+  margin: 0;
 }
 
-.p-banner-image{
-    padding: 1rem; 
-    font-size: 1.3rem;
+.p-banner-image {
+  padding: 1rem;
+  font-size: 1.3rem;
 }
 
-.btn-banner-image{
-    padding: 1rem 2rem; 
-    font-size: 1rem; 
-    background-color: rgba(240, 248, 255, 0); 
-    border: none; border: 0.1rem solid black;
+.btn-banner-image {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  border: 0.1rem solid black;
 }
 
-.btn-banner-image:hover{
-    background-color: black;
-    color: white;
+.btn-banner-image:hover {
+  background-color: black;
+  color: white;
 }
 
 /* seconda section */
-.col-sx{
-padding: 3rem 0.5rem ;
-
+.col-sx {
+  padding: 3rem 0.5rem;
 }
 
-.col-cntr{
-    display: flex; /* Abilita Flexbox */
-    justify-content: start; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-    padding: 1rem ;
-    img{
+.col-cntr {
+  display: flex; /* Abilita Flexbox */
+  justify-content: start; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 1rem;
+  img {
     width: 90%;
-    }
+  }
 }
 
-.col-dx{
-padding-top: 3rem 0 ;
+.col-dx {
+  padding-top: 3rem 0;
+}
 
+/* terza section */
+
+.title-dev-pov{
+    font-size: 2.1rem;
+}
+#visible-slider {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow: hidden; 
+}
+
+.card {
+    flex: 1; 
+    margin: 1rem; 
+    min-width: 12.5rem; 
+    min-height: 20rem ;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); 
+    padding: 1.5rem; 
+    background-color: white; 
+    border-radius: 1rem; 
+    transition: transform 0.3s ease; 
 }
 
 
+.navigation-dots {
+    text-align: center; 
+    margin-top: 2rem; 
+}
 
+.dot {
+    display: inline-block; 
+    width: 1rem; 
+    height: 1rem; 
+    margin: 0 0.5rem;
+    border-radius: 50%; 
+    background-color: gray; 
+    cursor: pointer; 
+}
+
+.dot.active {
+    background-color: blue; 
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
 
 /* Media query per tablet e desktop */
 @media (min-width: 768px) {
-    .ul-header{
-        width: 100%;
-    }
+  .ul-header {
+    width: 100%;
+  }
 
-/* prima section */
-.h2-banner-image{
+  /* prima section */
+  .h2-banner-image {
     font-size: 3.5rem;
     margin: 0;
-}
+  }
 
-.p-banner-image{
-    padding: 1rem; 
+  .p-banner-image {
+    padding: 1rem;
     font-size: 1.3rem;
-}
+  }
 
-.btn-banner-image{
-    padding: 1rem 2rem; 
-    font-size: 1rem; 
-    background-color: rgba(240, 248, 255, 0); 
-    border: none; border: 0.1rem solid black;
-}
-.btn-banner-image:hover{
+  .btn-banner-image {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border: 0.1rem solid black;
+  }
+  .btn-banner-image:hover {
     background-color: black;
     color: white;
-}
+  }
 
-/* seconda section */
-.col-sx{
-    padding: 3rem 1rem ;
-    
-    }
-
-    .col-cntr{
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        padding: 1rem;
-        img{
-        width: 90%;
-        }
-    }
-    
-    .col-dx{
+  /* seconda section */
+  .col-sx {
     padding: 3rem 1rem;
-    
-    }
+  }
 
+  .col-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    img {
+      width: 90%;
+    }
+  }
+
+  .col-dx {
+    padding: 3rem 1rem;
+  }
+
+    /* terza section */
+    .text{
+        height: 18rem;
+    }
 }
 
 @media (min-width: 1024px) {
-    .h2-banner-image{
-        font-size: 6rem;
-        margin: 0;
-    }
-    .p-banner-image{
-        padding:  4rem 5em; 
-        font-size: 1.5rem;
-    }
-    .btn-banner-image{
-        padding: 1rem 2rem; 
-        font-size: 2rem; 
-        background-color: rgba(240, 248, 255, 0); 
-        border: none; border: 0.2rem solid black;
-    }
+  .h2-banner-image {
+    font-size: 6rem;
+    margin: 0;
+  }
+  .p-banner-image {
+    padding: 4rem 5em;
+    font-size: 1.5rem;
+  }
+  .btn-banner-image {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border: 0.2rem solid black;
+  }
 
-    .btn-banner-image:hover{
-        background-color: black;
-        color: white;
-    }
+  .btn-banner-image:hover {
+    background-color: black;
+    color: white;
+  }
 
-    /* seconda section */
-.col-sx{
-    padding: 3rem  4rem;
-    h3{
-        font-size: 3rem;
+  /* seconda section */
+  .col-sx {
+    padding: 3rem 4rem;
+    h3 {
+      font-size: 3rem;
     }
-    p{
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
-    }
+  }
 
-    .col-cntr{
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        padding: 1rem;
-        img{
-        width: 80%;
-        }
+  .col-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    img {
+      width: 80%;
     }
-    
-    
-    .col-dx{
-        padding: 3rem  4rem;
-        h3{
-            font-size: 3rem;
-        }
-        p{
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-        }        
+  }
+
+  .col-dx {
+    padding: 3rem 4rem;
+    h3 {
+      font-size: 3rem;
     }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  /* terza section */
+  .card {
+    flex: 1 1 45%; /* Su desktop, ogni card occuperà il 45% della larghezza */
     
+}
+.title-dev-pov{
+    font-size: 4rem;
+}
+.text{
+    height: 14rem;
+}
 }
