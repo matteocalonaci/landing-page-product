@@ -1,4 +1,111 @@
-/* ok style collegato */
-h1{
+
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Intestazione */
+header {
+    padding: 1rem 2rem;
+    font-size: 1rem; 
+    line-height: 1rem; 
+    font-weight: 400;
+    position: sticky;
+}
+
+.ul-header{
+    width: 80%;
+}
+
+
+li{
+    list-style: none;
+}
+li:hover{
+    color: blue;
+}
+
+/* prima section */
+.h2-banner-image{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.p-banner-image{
+    padding: 1rem; 
+    font-size: 1.3rem;
+}
+
+.btn-banner-image{
+    padding: 1rem 2rem; 
+    font-size: 1rem; 
+    background-color: rgba(240, 248, 255, 0); 
+    border: none; border: 0.1rem solid black;
+}
+
+.btn-banner-image:hover{
     background-color: black;
+    color: white;
+}
+
+
+/* Media query per tablet e desktop */
+@media (min-width: 768px) {
+    .ul-header{
+        width: 100%;
+    }
+
+/* prima section */
+.h2-banner-image{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.p-banner-image{
+    padding: 1rem; 
+    font-size: 1.3rem;
+}
+
+.btn-banner-image{
+    padding: 1rem 2rem; 
+    font-size: 1rem; 
+    background-color: rgba(240, 248, 255, 0); 
+    border: none; border: 0.1rem solid black;
+}
+.btn-banner-image:hover{
+    background-color: black;
+    color: white;
+}
+}
+
+@media (min-width: 1024px) {
+    .h2-banner-image{
+        font-size: 6rem;
+        margin: 0;
+    }
+    .p-banner-image{
+        padding:  4rem 5em; 
+        font-size: 1.5rem;
+    }
+    .btn-banner-image{
+        padding: 1rem 2rem; 
+        font-size: 2rem; 
+        background-color: rgba(240, 248, 255, 0); 
+        border: none; border: 0.2rem solid black;
+    }
+
+    .btn-banner-image:hover{
+        background-color: black;
+        color: white;
+    }
+   
 }
