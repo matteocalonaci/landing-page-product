@@ -127,6 +127,21 @@ li:hover {
     border-radius: 50%;
     margin: 5px;
     cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+/* quarta sezione */
+.title-collection{
+    font-size: 2.1rem;
+    padding: 3rem 0;
+}
+
+.img-container{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+img{
+    width: 100%;
 }
 
 /* Media query per tablet e desktop */
@@ -248,5 +263,10 @@ li:hover {
 }
 .text{
     height: 14rem;
+}
+
+/* quarta sezione */
+.title-collection{
+    font-size: 4rem;
 }
 }

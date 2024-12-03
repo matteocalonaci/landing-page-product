@@ -39,4 +39,16 @@ Tablet: Vengono visualizzate due card alla volta, con la possibilità di navigar
 
 Desktop: Vengono visualizzate tre card alla volta, con un numero appropriato di punti di navigazione che corrispondono ai gruppi di card visualizzati.
 
+**SECTION 4**
+La quarta sezione è divisa in 3 colonne.
+Tutte e tre le colonne hanno al loro interno una card composta da:
+- Immagine
+- Valutazione
+- Nome Prodotto
+- Prezzo
+
+
+
+
+
 

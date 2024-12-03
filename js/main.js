@@ -85,32 +85,32 @@ const dev_pov = [
   {
     text: `"La paperella di gomma è diventata il mio strumento di debugging preferito. Spiegare i problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere bug che altrimenti mi avrebbero fatto impazzire. È anche un ottimo antistress nelle giornate difficili!"
             "Non avrei mai immaginato quanto una semplice paperella di gomma potesse fare la differenza. E incredibile come verbalizzare i problemi davanti alla paperella mi aiuti a vedere soluzioni che prima non notavo. Inoltre, è carinissima sulla mia scrivania!"`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "David William - Feb 22,2 023",
   },
   {
     text: `"Non avrei mai immaginato quanto una semplice paperella di gomma potesse fare la differenza. E incredibile come verbalizzare i problemi davanti alla paperella mi aiuti a vedere soluzioni che prima non notavo. Inoltre, è carinissima sulla mia scrivania!"`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "Emma Turner - April 5, 2023",
   },
   {
     text: `"La paperella di gomma è diventata il mio piccolo amico durante le riunioni. Ogni volta che la guardo, mi ricorda di mantenere la calma e affrontare le sfide con un sorriso. Non posso più farne a meno!"`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "Luca Rossi - April 10, 2023",
   },
   {
     text: `"Ho sempre pensato che le paperelle di gomma fossero solo dei giocattoli, ma questa ha cambiato la mia prospettiva. Parlarle dei miei pensieri mi aiuta a chiarire le idee e a trovare nuove soluzioni. È un'esperienza sorprendente!"`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "Sara Bianchi - April 15, 2023",
   },
   {
     text: `"La mia paperella di gomma è diventata una fonte di ispirazione. Ogni volta che la vedo, mi ricorda di essere creativo e di affrontare la vita con leggerezza. È incredibile come un semplice oggetto possa avere un impatto così grande!"`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "Marco Verdi - April 20, 2023",
 },
 {
     text: `"In un mondo frenetico, la mia paperella di gomma è il mio rifugio. Mi aiuta a ritrovare la calma nei momenti di stress. Ogni volta che la guardo, mi ricorda di prendere una pausa e respirare profondamente."`,
-    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
+    star: `<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
     name: "Giulia Neri - April 25, 2023",
 }
 ];
