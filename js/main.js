@@ -1,3 +1,5 @@
+//HEADER
+
 // Creo un array di items
 const nav = [
   "Home",
@@ -19,10 +21,15 @@ const navItems = nav.map((item) => {
 // Popolo ogni <ul> con gli elementi di navigazione generati
 navLists.forEach((ul) => {
   ul.innerHTML = navItems.join(""); // Unisco gli elementi <li> in una singola stringa e la assegno all'innerHTML di ciascun <ul>
+  console.log(ul.innerHTML);
+  
 });
 
 // Stampo nella console l'elenco di <ul> selezionati per verificare il risultato
 console.log(navLists);
+_________________________________________________________________________________________________________
+
+//SECTION 2(i punti di vista)
 
 // array oggetti (i punti di vista)
 const viewPoints_sx = [
@@ -80,6 +87,10 @@ const rightContainer = document.querySelector(".col-dx .text-punti-di-vista");
 // Stampa i punti di vista
 printViewPoints(viewPoints_sx, leftContainer);
 printViewPoints(viewPoints_dx, rightContainer);
+
+___________________________________________________________________________________________________
+
+// SECTION 3 (RECENSIONI)
 
 const dev_pov = [
   {
@@ -200,3 +211,16 @@ showCards(currentIndex);
 
 // Mostra la sezione scrollabile
 scrollableSlider.style.display = 'none';
+
+___________________________________________________________________________________________________
+
+function toggleText(button) {
+    const content = button.closest('.mb-5').querySelector('.toggle-content');
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = '-';
+    } else {
+        content.style.display = 'none';
+        button.textContent = '+';
+    }
+}

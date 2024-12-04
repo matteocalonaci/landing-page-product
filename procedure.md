@@ -47,6 +47,14 @@ Tutte e tre le colonne hanno al loro interno una card composta da:
 - Nome Prodotto
 - Prezzo
 
+**SECTION 5**
+La quinta sezione è divisa in 2 colonne.
+- colonna 1 -> immagine.
+- colonna 2 -> FAQs con Domande e Risposte: Ogni domanda è seguita da una risposta che può essere visualizzata o nascosta tramite un'interazione con un pulsante. Questo formato rende la sezione interattiva e facile da navigare.
+
+Di seguito una sezione un'ulteriore sezione suddivisa in 3 colonne che fungono da promozione visiva delle qualità e dei servizi associati ai prodotti offerti.
+
+
 
 
 
