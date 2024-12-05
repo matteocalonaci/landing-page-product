@@ -2,32 +2,28 @@
 
 // Creo un array di items
 const nav = [
-  "Home",
-  "i punti di forza",
-  "Recensioni",
-  "Paperelle",
-  "FAQs",
-  "Newsletter",
-];
-
-// Seleziono tutti gli elementi <ul> nel documento
-const navLists = document.querySelectorAll("ul");
-
-// Creo un array di elementi <li> in formato stringa
-const navItems = nav.map((item) => {
-  return `<li>${item}</li>`; // Restituisco una stringa HTML per ogni elemento dell'array
-});
-
-// Popolo ogni <ul> con gli elementi di navigazione generati
-navLists.forEach((ul) => {
-  ul.innerHTML = navItems.join(""); // Unisco gli elementi <li> in una singola stringa e la assegno all'innerHTML di ciascun <ul>
-  console.log(ul.innerHTML);
+    { name: "Home", id: "section1" },
+    { name: "i punti di forza", id: "section2" },
+    { name: "Recensioni", id: "section3" },
+    { name: "Paperelle", id: "section4" },
+    { name: "FAQs", id: "section5" },
+    { name: "Newsletter", id: "section6" },
+  ];
   
-});
-
-// Stampo nella console l'elenco di <ul> selezionati per verificare il risultato
-console.log(navLists);
-_________________________________________________________________________________________________________
+  // Seleziono tutti gli elementi <ul> con la classe "nav-list"
+  const navLists = document.querySelectorAll(".nav-list");
+  
+  // Creo un array di elementi <li> in formato stringa
+  const navItems = nav.map((item) => {
+    return `<li><a href="#${item.id}">${item.name}</a></li>`; // Restituisco una stringa HTML per ogni elemento dell'array
+  });
+  
+  // Popolo ogni <ul> con gli elementi di navigazione generati
+  navLists.forEach((ul) => {
+    ul.innerHTML = navItems.join(""); // Unisco gli elementi <li> in una singola stringa e la assegno all'innerHTML di ciascun <ul>
+    console.log(ul.innerHTML); // Stampa l'innerHTML di ciascun <ul>
+  });
+//   ___________________________________________________________________________________
 
 //SECTION 2(i punti di vista)
 
@@ -88,7 +84,7 @@ const rightContainer = document.querySelector(".col-dx .text-punti-di-vista");
 printViewPoints(viewPoints_sx, leftContainer);
 printViewPoints(viewPoints_dx, rightContainer);
 
-___________________________________________________________________________________________________
+// ___________________________________________________________________________________________________
 
 // SECTION 3 (RECENSIONI)
 
@@ -154,9 +150,10 @@ function showCards(index) {
     const cards = scrollableSlider.querySelectorAll('.card');
     visibleSlider.innerHTML = ''; 
 
-    // Mostra solo la prima card su mobile, e le prime due card su desktop
+    // Mostra solo la prima card su mobile, due su tablet e tre su desktop
     const isMobile = window.innerWidth < 768; // Controlla se è mobile
-    const numberOfCardsToShow = isMobile ? 1 : 2; // Mostra 1 card su mobile, 2 su desktop
+    const isTablet = window.innerWidth >= 768 && window.innerWidth < 992; // Controlla se è tablet
+    const numberOfCardsToShow = isMobile ? 1 : (isTablet ? 2 : 3); // Mostra 1 card su mobile, 2 su tablet, 3 su desktop
 
     for (let i = 0; i < numberOfCardsToShow; i++) {
         const cardToShow = cards[index + i];
@@ -176,7 +173,8 @@ function updateNavigationDots(index) {
     dots.forEach(dot => dot.remove()); // Rimuovi i punti esistenti
 
     const isMobile = window.innerWidth < 768;
-    const numberOfCardsToShow = isMobile ? 1 : 2; // 1 per mobile, 2 per desktop
+    const isTablet = window.innerWidth >= 768 && window.innerWidth < 992; // Controlla se è tablet
+    const numberOfCardsToShow = isMobile ? 1 : (isTablet ? 2 : 3); // 1 per mobile, 2 per tablet, 3 per desktop
     const totalCards = dev_pov.length;
     const totalDots = Math.ceil(totalCards / numberOfCardsToShow); // Calcola i punti in base al numero di card visualizzate
 
@@ -212,7 +210,10 @@ showCards(currentIndex);
 // Mostra la sezione scrollabile
 scrollableSlider.style.display = 'none';
 
-___________________________________________________________________________________________________
+// ___________________________________________________________________________________________________
+
+// SECTION 5 (FAQs)
+
 
 function toggleText(button) {
     const content = button.closest('.mb-5').querySelector('.toggle-content');

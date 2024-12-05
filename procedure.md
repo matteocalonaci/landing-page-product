@@ -55,6 +55,15 @@ La quinta sezione è divisa in 2 colonne.
 Di seguito una sezione un'ulteriore sezione suddivisa in 3 colonne che fungono da promozione visiva delle qualità e dei servizi associati ai prodotti offerti.
 
 
+**SECTION 6**
+ La sesta sezione è realizzata con:
+ - titlo sezione
+ - campo per inserimento email per ricevere le newsletter (non funzionante)
+ - icone per visitare i social (non funzionante)
+
+**FOOTER**
+composto da un testo per il copywright
+
 
 
 

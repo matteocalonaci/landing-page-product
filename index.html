@@ -38,14 +38,16 @@
 
       <!-- Header destro (Menu) -->
       <div class="col-9 d-flex justify-content-end align-items-center">
-        <!--Hamburger menu per mobile -->
+        <!-- Hamburger menu per mobile -->
         <div
           class="d-block d-md-none"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight"
         >
-          <i class="fa-solid fa-bars text-black"></i>
+          <svg width="40" height="40">
+            <use href="#navbar-icon"></use>
+          </svg>
         </div>
 
         <!-- Offcanvas -->
@@ -73,7 +75,11 @@
           </div>
           <div class="offcanvas-body">
             <nav>
-              <ul style="line-height: 4rem; margin: 0">
+              <ul
+                id="offcanvas"
+                class="nav-list text-black"
+                style="line-height: 4rem; margin: 0"
+              >
                 <!-- JavaScript -->
               </ul>
             </nav>
@@ -81,9 +87,8 @@
         </div>
 
         <!-- Menu di navigazione per schermi più grandi -->
-
         <ul
-          class="ul-header d-none d-md-flex justify-content-between align-items-center"
+          class="nav-list ul-header d-none d-md-flex justify-content-between align-items-center text-black"
         >
           <!-- JavaScript -->
         </ul>
@@ -92,7 +97,7 @@
 
     <main>
       <!-- section 1 -->
-      <section class="d-flex flex-column flex-md-row">
+      <section id="section1" class="d-flex flex-column flex-md-row">
         <div class="col-12 col-md-6">
           <img
             src="./img/banner-image.png"
@@ -119,7 +124,7 @@
       </section>
 
       <!--section 2 (i punti di forza) -->
-      <section class="d-flex flex-column flex-md-row">
+      <section id="section2" class="d-flex flex-column flex-md-row">
         <!-- col-sx -->
         <div class="col-12 col-sx col-md-4 text-center mb-3 mb-md-0">
           <h3 class="h3-punti-di-vista"></h3>
@@ -143,7 +148,7 @@
       </section>
 
       <!-- section 3 (recensioni) -->
-      <section class="pt-5">
+      <section id="section3" class="pt-5">
         <h2 class="title-dev-pov text-center">
           Cosa ne pensano i nostri sviluppatori
         </h2>
@@ -159,7 +164,7 @@
       </section>
 
       <!-- section 4 (paperelle) -->
-      <section style="background-color: rgb(229, 227, 227)">
+      <section id="section4" style="background-color: rgb(229, 227, 227)">
         <h2 class="text-center title-collection">La collezione di paperelle</h2>
         <p class="text-center p-4">
           una paperella per ogni stile di programmazione
@@ -207,18 +212,18 @@
       </section>
 
       <!-- section 5 (faq) -->
-      <section>
+      <section id="section5">
         <div class="container">
           <div class="row d-flex">
-            <div class="img-faq col-12 col-md-6 p-4">
+            <div class="img-faq col-12 col-md-12 col-xl-6 p-4">
               <img src="./img/single-image2.png" alt="" class="img-fluid" />
             </div>
-            <div class="col-12 col-md-6 p-4">
-              <h2 class="title-collection">FAQs</h2>
+            <div class="col-12 col-md-12 col-xl-6 p-4"> <!-- Rimane col-md-6 per desktop -->
+                <h2 class="title-collection">FAQs</h2>
 
               <div class="mb-5 d-flex">
                 <div class="col-11">
-                  <h3 class="mb">
+                  <h3 class="faq-text mb">
                     Come posso utilizzare la paperella di gomma per il
                     debugging?
                   </h3>
@@ -245,8 +250,8 @@
 
               <div class="mb-5 d-flex">
                 <div class="col-11">
-                  <h3 class="mb">
-                    Quali sono i vantaggi di usare una paperella di gomma per i
+                    <h3 class="faq-text mb">
+                        Quali sono i vantaggi di usare una paperella di gomma per i
                     programmatori?
                   </h3>
                   <div class="toggle-content" style="display: none">
@@ -272,8 +277,8 @@
 
               <div class="mb-5 d-flex">
                 <div class="col-11">
-                  <h3 class="mb">
-                    Posso usare la paperella di gomma indipendentemente dal
+                    <h3 class="faq-text mb">
+                        Posso usare la paperella di gomma indipendentemente dal
                     linguaggio di programmazione che utilizzo?
                   </h3>
                   <div class="toggle-content" style="display: none">
@@ -299,8 +304,8 @@
 
               <div class="mb-5 d-flex">
                 <div class="col-11">
-                  <h3 class="mb">
-                    Quanto dettagliatamente posso spiegare il mio codice alla
+                    <h3 class="faq-text mb">
+                        Quanto dettagliatamente posso spiegare il mio codice alla
                     paperella di gomma?
                   </h3>
                   <div class="toggle-content" style="display: none">
@@ -325,7 +330,7 @@
               </div>
             </div>
           </div>
-          <div class="row d-flex" style="padding: 4rem 0;">
+          <div class="row d-flex" style="padding: 4rem 0">
             <div class="col-12 product col-sm-4 text-center p-4">
               <svg style="display: none">
                 <symbol
@@ -351,7 +356,7 @@
 
               <!-- Utilizzo del simbolo SVG -->
               <svg width="40" height="40">
-                <use style="color:rgb(1, 1, 62)" href="#balloon" fill="blue" />
+                <use style="color: rgb(1, 1, 62)" href="#balloon" fill="blue" />
               </svg>
               <h2>100% Prodotto Di Qualità</h2>
               <p>
@@ -382,12 +387,15 @@
 
               <!-- Utilizzo del simbolo SVG -->
               <svg width="40" height="40">
-                <use style="color:rgb(1, 1, 62)" href="#bag-heart" fill="green" />
+                <use
+                  style="color: rgb(1, 1, 62)"
+                  href="#bag-heart"
+                  fill="green"
+                />
               </svg>
               <h2>Spedizione Gratuita</h2>
               <p>Dal magazzino alla scrivania</p>
             </div>
-
 
             <div class="col-12 refound col-sm-4 text-center p-4">
               <svg style="display: none">
@@ -419,7 +427,11 @@
 
               <!-- Utilizzo del simbolo SVG con colore blu -->
               <svg width="40" height="40">
-                <use style="color:rgb(1, 1, 62)" href="#handiplast" fill="blue" />
+                <use
+                  style="color: rgb(1, 1, 62)"
+                  href="#handiplast"
+                  fill="blue"
+                />
               </svg>
 
               <h2>Rimborso Garantito</h2>
@@ -430,11 +442,96 @@
       </section>
 
       <!-- section 6 (newsletter) -->
-      <section></section>
+      <section id="section6" class="newsletter d-flex justify-content-center align-items-center" style="background-color: rgb(229, 227, 227)">
+       <div class="newsletter-container">
+        <h2 class="text-center title-collection">
+            Iscriviti per rimanere aggiornato
+          </h2>
+          <p class="text-center p-4">
+            iscriviti alla nostra newsletter per rimanere aggiornato su sconti e
+            novità
+          </p>
+  
+          <div class="container text-center p-4">
+            <div class="d-flex justify-content-center">
+              <input
+                class="input-news me-2"
+                type="text"
+                placeholder="Lascia la tua email qui..."
+                aria-label="Email"
+              />
+              <button style="color: #04df6c" class="news-btn" type="button">
+                <svg
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-send"
+                  viewBox="0 0 16 16"
+                >
+                  <use href="#send"></use>
+                </svg>
+              </button>
+            </div>
+            <hr class="hr-news mx-auto" style="margin-top: -0.5rem" />
+            <svg style="display: none">
+              <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                id="send"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="M26.07 3.996a2.974 2.974 0 0 0-.933.223h-.004c-.285.113-1.64.683-3.7 1.547l-7.382 3.109c-5.297 2.23-10.504 4.426-10.504 4.426l.062-.024s-.359.118-.734.375a2.03 2.03 0 0 0-.586.567c-.184.27-.332.683-.277 1.11c.09.722.558 1.155.894 1.394c.34.242.664.355.664.355h.008l4.883 1.645c.219.703 1.488 4.875 1.793 5.836c.18.574.355.933.574 1.207c.106.14.23.257.379.351a1.119 1.119 0 0 0 .246.106l-.05-.012c.015.004.027.016.038.02c.04.011.067.015.118.023c.773.234 1.394-.246 1.394-.246l.035-.028l2.883-2.625l4.832 3.707l.11.047c1.007.442 2.027.196 2.566-.238c.543-.437.754-.996.754-.996l.035-.09l3.734-19.129c.106-.472.133-.914.016-1.343a1.807 1.807 0 0 0-.781-1.047a1.872 1.872 0 0 0-1.067-.27zm-.101 2.05c-.004.063.008.056-.02.177v.011l-3.699 18.93c-.016.027-.043.086-.117.145c-.078.062-.14.101-.465-.028l-5.91-4.531l-3.57 3.254l.75-4.79l9.656-9c.398-.37.265-.448.265-.448c.028-.454-.601-.133-.601-.133l-12.176 7.543l-.004-.02l-5.836-1.965v-.004l-.015-.003a.27.27 0 0 0 .03-.012l.032-.016l.031-.011s5.211-2.196 10.508-4.426c2.652-1. ..."
+                />
+              </symbol>
+            </svg>
+  
+            <div class="container d-flex justify-content-center align-items-center mt-5">
+              <ul
+                id="icon-list"
+                class="d-flex justify-content-between align-items-center"
+              >
+                <li class="p-2">
+                  <svg class="icon-news" width="50" height="50">
+                    <use href="#facebook"></use>
+                  </svg>
+                </li>
+                <li class="p-2">
+                  <svg class="icon-news" width="50" height="50">
+                    <use href="#twitter"></use>
+                  </svg>
+                </li>
+                <li class="p-2">
+                  <svg class="icon-news" width="50" height="50">
+                    <use href="#instagram"></use>
+                  </svg>
+                </li>
+                <li class="p-2">
+                  <svg class="icon-news" width="50" height="50">
+                    <use href="#linkedin"></use>
+                  </svg>
+                </li>
+                <li class="p-2">
+                  <svg class="icon-news" width="50" height="50">
+                    <use href="#youtube"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </div>
+      </section>
+
     </main>
+
+    <footer class="text-center mt-3">
+        <p> <i class="fa-regular fa-copyright"></i>2024 BooLanding Product. Designed by Boolean</p>
+
+    </footer>
 
     <!-- link javascript -->
     <script src="./js/main.js"></script>
+    <script src="./js/icons.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

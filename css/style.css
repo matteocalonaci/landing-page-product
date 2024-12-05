@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+p, div, span {
+    cursor: default; /* Imposta il cursore di default per i paragrafi, div e span */
+}
+
 /* Body */
 body {
   font-family: Arial, sans-serif;
@@ -31,6 +35,12 @@ li {
 }
 li:hover {
   color: blue;
+}
+
+.nav-list a {
+    text-decoration: none; 
+    color: inherit;
+    font-style: normal;
 }
 
 /* prima section */
@@ -144,6 +154,46 @@ img{
     width: 100%;
 }
 
+/* quinta sezione */
+
+.input-news {
+    width: 30rem;
+    padding: 0.5rem 1rem;     
+    border: none; 
+    background-color: rgb(229, 227, 227); 
+    border-radius: 4px; 
+}
+.hr-news{
+    width: 20rem;
+}
+
+.input-news:focus {
+    outline: none; /* Rimuove il contorno predefinito quando l'input è attivo */
+}
+.news-btn {
+    background-color: transparent; /* Rende il pulsante trasparente */
+    border: none; /* Rimuove il bordo del pulsante */
+    padding-bottom: 0.5rem;
+}
+
+.news-btn:active {
+    box-shadow: none; /* Rimuove l'ombra quando il pulsante è cliccato */
+    transform: scale(0.95); /* Riduce leggermente il pulsante quando viene cliccato */
+}
+ .icon-news{
+    color:#04df6c ;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(212, 212, 212);
+    border-radius: 2rem;
+ }
+ .newsletter-container{
+    width: 25rem;
+    h2{
+        font-size: 4rem;
+    }
+    }
+ 
+
 /* Media query per tablet e desktop */
 @media (min-width: 768px) {
   .ul-header {
@@ -195,6 +245,51 @@ img{
     /* terza section */
     .text{
         height: 18rem;
+    }
+
+    /* quarta sezione */
+    .faq-text{
+        font-size: 1rem;
+    }
+
+
+    /* quinta sezione */
+
+.input-news {
+    width: 30rem;
+    padding: 0.5rem 1rem;     
+    border: none; 
+    background-color: rgb(229, 227, 227); 
+    border-radius: 4px; 
+}
+.hr-news{
+    width: 30rem;
+}
+
+.input-news:focus {
+    outline: none; /* Rimuove il contorno predefinito quando l'input è attivo */
+}
+.news-btn {
+    background-color: transparent; /* Rende il pulsante trasparente */
+    border: none; /* Rimuove il bordo del pulsante */
+    padding-bottom: 0.5rem;
+}
+
+.news-btn:active {
+    box-shadow: none; /* Rimuove l'ombra quando il pulsante è cliccato */
+    transform: scale(0.95); /* Riduce leggermente il pulsante quando viene cliccato */
+}
+ .icon-news{
+    color:#04df6c ;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(212, 212, 212);
+    border-radius: 2rem;
+ }
+ .newsletter-container{
+    width: 34rem;
+    h2{
+        font-size: 5rem;
+    }
     }
 }
 
@@ -262,7 +357,7 @@ img{
     font-size: 4rem;
 }
 .text{
-    height: 14rem;
+    height: 18rem;
 }
 
 /* quarta sezione */
@@ -280,6 +375,45 @@ img{
 }
 .ship{
     border-right: 0.03rem solid rgba(0, 0, 0, 0.399);
-
 }
+/* quinta section */
+
+.newsletter-container{
+width: 34rem;
+h2{
+    font-size: 5rem;
+}
+}
+.input-news {
+    width: 30rem;
+    padding: 0.5rem 1rem;     
+    border: none; 
+    background-color: rgb(229, 227, 227); 
+    border-radius: 4px; 
+}
+.hr-news{
+    width: 30rem;
+}
+
+.input-news:focus {
+    outline: none; /* Rimuove il contorno predefinito quando l'input è attivo */
+}
+.news-btn {
+    background-color: transparent; /* Rende il pulsante trasparente */
+    border: none; /* Rimuove il bordo del pulsante */
+    padding-bottom: 0.5rem;
+}
+
+.news-btn:active {
+    box-shadow: none; /* Rimuove l'ombra quando il pulsante è cliccato */
+    transform: scale(0.95); /* Riduce leggermente il pulsante quando viene cliccato */
+}
+ .icon-news{
+    color:#04df6c ;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(212, 212, 212);
+    border-radius: 2rem;
+ }
+
+
 }
